@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  background-color: #fafafa;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85vw;
+  padding: 1em;
+}
+
+nav .logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav .nav-buttons {
+  width: 40%;
+}
+
+nav .nav-buttons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav .nav-buttons li {
+  padding: .5rem 2rem;
+}
+
+nav .nav-buttons li span {
+  border: 1px solid black;
+  padding: .5rem 2rem;
+}
+
+.section-1 {
+  background-color: #2d2640;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #fafafa;
+  height: 25%;
+}
+
+.section-1 .left {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 29%;
+}
+
+.section-1 .left h1 {
+  color: #fafafa;
+  font-family: 'DM Serif Display', serif;
+  font-size: 4rem;
+  font-weight: 400;
+  padding: 1rem 0rem;
+}
+
+.section-1 .left p {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.section-1 .left button {
+  background-color: #2d2640;
+  color: #fafafa;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  border: 1px solid #fafafa;
+  padding: .5rem 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.section-1 .right {
+  background-color: mediumpurple;
+}
+
+.section-1 .right img {
+  margin-top: 5em;
+}
+
+.section-2 {
+  background-color: rosybrown;
+}
+
+.section-2 .subtitle {
+  font-weight: 700;
+}
+
+.section-2 .snippets {
+  background-color: silver;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav {
+  background-color: lightsteelblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav .footer-section {
+  background-color: lightyellow;
+}
+
+.footer-nav .footer-section ul {
+  list-style: none;
+}
+
+.footer-nav .footer-section ul span {
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
