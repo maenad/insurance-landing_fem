@@ -8,6 +8,10 @@
 
 html {
   width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -24,9 +28,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100vw;
 }
 
-nav {
+.flex-wrapper nav {
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;
@@ -39,17 +44,17 @@ nav {
   padding: 1em;
 }
 
-nav .logo {
+.flex-wrapper nav .logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-nav .nav-buttons {
+.flex-wrapper nav .nav-buttons {
   width: 40%;
 }
 
-nav .nav-buttons ul {
+.flex-wrapper nav .nav-buttons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,16 +64,16 @@ nav .nav-buttons ul {
           justify-content: space-evenly;
 }
 
-nav .nav-buttons li {
+.flex-wrapper nav .nav-buttons li {
   padding: .5rem 2rem;
 }
 
-nav .nav-buttons li span {
+.flex-wrapper nav .nav-buttons li span {
   border: 1px solid black;
   padding: .5rem 2rem;
 }
 
-.section-1 {
+.flex-wrapper .section-1 {
   background-color: #2d2640;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,14 +84,14 @@ nav .nav-buttons li span {
   height: 25%;
 }
 
-.section-1 .left {
+.flex-wrapper .section-1 .left {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   width: 29%;
 }
 
-.section-1 .left h1 {
+.flex-wrapper .section-1 .left h1 {
   color: #fafafa;
   font-family: 'DM Serif Display', serif;
   font-size: 4rem;
@@ -94,12 +99,12 @@ nav .nav-buttons li span {
   padding: 1rem 0rem;
 }
 
-.section-1 .left p {
+.flex-wrapper .section-1 .left p {
   line-height: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.section-1 .left button {
+.flex-wrapper .section-1 .left button {
   background-color: #2d2640;
   color: #fafafa;
   font-family: 'Karla', sans-serif;
@@ -110,45 +115,117 @@ nav .nav-buttons li span {
   font-size: 1rem;
 }
 
-.section-1 .right {
+.flex-wrapper .section-1 .right {
   background-color: mediumpurple;
 }
 
-.section-1 .right img {
-  margin-top: 5em;
+.flex-wrapper .section-2 {
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.section-2 {
-  background-color: rosybrown;
-}
-
-.section-2 .subtitle {
+.flex-wrapper .section-2 .subtitle {
   font-weight: 700;
+  font-family: 'DM Serif Display', serif;
+  font-size: 4rem;
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-top: 1px solid black;
 }
 
-.section-2 .snippets {
-  background-color: silver;
+.flex-wrapper .section-2 .snippets {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
 }
 
-.footer-nav {
+.flex-wrapper .section-2 .snippets .snippet {
+  width: 23%;
+}
+
+.flex-wrapper .section-2 .snippets .snippet span {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+}
+
+.flex-wrapper .section-2 .snippets .snippet p {
+  margin-top: .5rem;
+}
+
+.flex-wrapper .section-2 .snippets .snippet img {
+  margin-bottom: 1em;
+}
+
+.flex-wrapper .section-3 {
+  background-color: #2d2640;
+  background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  color: #fafafa;
+  width: 80%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4em;
+}
+
+.flex-wrapper .section-3 .left {
+  width: 33%;
+}
+
+.flex-wrapper .section-3 .left .subtitle {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3em;
+}
+
+.flex-wrapper .section-3 .right button {
+  background-color: rgba(238, 130, 238, 0);
+  color: #fafafa;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  border: 1px solid #fafafa;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.flex-wrapper .footer-nav {
   background-color: lightsteelblue;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer-nav .footer-section {
+.flex-wrapper .footer-nav .footer-section {
   background-color: lightyellow;
 }
 
-.footer-nav .footer-section ul {
+.flex-wrapper .footer-nav .footer-section ul {
   list-style: none;
 }
 
-.footer-nav .footer-section ul span {
+.flex-wrapper .footer-nav .footer-section ul span {
   font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,10 @@
 
 html {
     width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }
 
 body {
@@ -19,7 +23,10 @@ body {
 .flex-wrapper {
     display: flex;
     flex-direction: column;
-}
+    width: 100vw;
+
+
+
 nav {
     align-self: center;
     display: flex;
@@ -59,6 +66,7 @@ nav {
     justify-content: space-around;
     color: $light-gray;
     height: 25%;
+    
 
     .left {
         align-self: center;
@@ -91,23 +99,83 @@ nav {
     .right {
         background-color: mediumpurple;
 
-        img {
-            margin-top: 5em;
-        }
     }
 }
+
 .section-2 {
-    background-color: rosybrown;
+    width: 80%;
+    align-self: center;
 
     .subtitle {
         font-weight: 700;
+        font-family: 'DM Serif Display', serif;
+        font-size: 4rem;
+        margin-top: 1.5em;
+        padding-top: 1.5em;
+        width: fit-content;
+        border-top: 1px solid black;
     }
-
     .snippets {
-        background-color: silver;
         display: flex;
+        align-content: center;
+        justify-content: space-between;
+        margin-top: 3rem;
+
+
+        .snippet {
+            width: 23%;
+
+            span {
+                font-family: 'DM Serif Display', serif;
+                font-size: 1.5rem;
+            }
+            p {
+                margin-top: .5rem;
+            }
+
+            img {
+                margin-bottom: 1em;
+            }
+        }
     }
 }
+.section-3 {
+    background-color: $dark-violet;
+    background-image: url('/images/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    color: $light-gray;
+    width: 80%;
+    align-self: center;
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em;
+
+.left {
+    width: 33%;
+    .subtitle {
+        font-family: 'DM Serif Display', serif;
+        font-size: 3em;
+    }
+}
+.right {
+
+    button {
+        background-color: rgba(238, 130, 238, 0);
+        color: $light-gray;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        border: 1px solid $light-gray;
+        padding: .5rem 1rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+}
+}
+
 
 .footer-nav {
     background-color: lightsteelblue;
@@ -124,4 +192,5 @@ nav {
             }
         }
     }
+}
 }
