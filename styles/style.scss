@@ -34,6 +34,7 @@ body {
       align-self: center;
     }
 
+
     .nav-buttons {
       width: 40%;
 
@@ -51,8 +52,8 @@ body {
           padding: 0.5rem 2rem;
         }
         span:hover {
-            background-color: $darkest-violet;
-            color: $light-gray;
+          background-color: $darkest-violet;
+          color: $light-gray;
         }
       }
     }
@@ -60,13 +61,12 @@ body {
 
   .section-1 {
     background-color: $dark-violet;
-    background-image: url('/images/bg-pattern-intro-left-desktop.svg');
+    background-image: url("/images/bg-pattern-intro-left-desktop.svg");
     background-repeat: no-repeat;
     background-position-y: top 350px;
     display: flex;
     justify-content: space-around;
     color: $light-gray;
-    height: 25%;
 
     .left {
       align-self: center;
@@ -95,15 +95,15 @@ body {
         font-size: 1rem;
       }
       button:hover {
-          background-color: $light-gray;
-          color: $darkest-violet;
+        background-color: $light-gray;
+        color: $darkest-violet;
       }
     }
     .right {
-        width: 40%;
-        img {
-            height: 120%;
-        }
+      width: 40%;
+      img {
+        height: 120%;
+      }
     }
   }
 
@@ -180,7 +180,7 @@ body {
       button:hover {
         background-color: $light-gray;
         color: $darkest-violet;
-    }
+      }
     }
   }
   .footer-wrap {
@@ -189,10 +189,9 @@ body {
     flex-direction: column;
     margin-top: 2em;
     padding-top: 2em;
-    background-image: url('/images/bg-pattern-footer-desktop.svg');
+    background-image: url("/images/bg-pattern-footer-desktop.svg");
     background-repeat: no-repeat;
     background-color: $light-gray;
-
 
     .social-media {
       display: flex;
@@ -207,7 +206,6 @@ body {
         list-style: none;
         width: 10%;
         justify-content: space-between;
-
       }
     }
     .footer-nav {
@@ -217,23 +215,19 @@ body {
       justify-content: space-between;
       text-transform: uppercase;
       margin: 2em 0em;
+    }
 
+    ul {
+      list-style: none;
 
-      }
-
-      ul {
-        list-style: none;
-        
-
-        li {
-            font-weight: 600;;
-        }
-      }
-      h6 {
-        padding-bottom: 1em;
-        font-size: 16px;
-        font-weight: 200;
+      li {
+        font-weight: 600;
       }
     }
+    h6 {
+      padding-bottom: 1em;
+      font-size: 16px;
+      font-weight: 200;
+    }
   }
-
+}
