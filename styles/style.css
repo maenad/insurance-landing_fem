@@ -245,6 +245,7 @@ body {
   background-image: url("/images/bg-pattern-footer-desktop.svg");
   background-repeat: no-repeat;
   background-color: #fafafa;
+  list-style: none;
 }
 
 .flex-wrapper .footer-wrap .social-media {
